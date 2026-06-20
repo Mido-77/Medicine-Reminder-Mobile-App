@@ -19,6 +19,12 @@ Built as part of the **ECE5605 — Mobile Application Development** course proje
 
 ---
 
+## 📑 Documentation
+
+- [SRS Document](docs/SRS_document.pdf)
+
+---
+
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
@@ -53,8 +59,8 @@ Onboarding · Login · Sign Up · Home · Add/Edit Medicine · Medicine Detail �
 
 ```bash
 # Clone the repository
-git clone https://github.com/MarwanSSalah/medicine-reminder-flutter-app-.git
-cd medicine-reminder-flutter-app-
+git clone https://github.com/Mido-77/Medicine-Reminder-Mobile-App.git
+cd Medicine-Reminder-Mobile-App
 
 # Install dependencies
 flutter pub get
@@ -80,16 +86,22 @@ flutter build ios --release
 ## 📂 Project Structure
 
 ```
-lib/
-├── backend/
-│   ├── database/        # LocalDatabase (shared_preferences wrapper)
-│   ├── models/           # Medicine, User, HistoryEntry
-│   ├── repositories/      # Data access layer
-│   └── services/         # Auth, Medicine, Notification, Stats, DoseWindow
-├── screens/              # All UI screens
-├── theme/                # App colors, gradients, light/dark theme
-├── app_state.dart        # Global app state (ChangeNotifier)
-└── main.dart             # Entry point & route definitions
+.
+├── lib/
+│   ├── backend/
+│   │   ├── database/        # LocalDatabase (shared_preferences wrapper)
+│   │   ├── models/           # Medicine, User, HistoryEntry
+│   │   ├── repositories/      # Data access layer
+│   │   └── services/         # Auth, Medicine, Notification, Stats, DoseWindow
+│   ├── screens/              # All UI screens
+│   ├── theme/                # App colors, gradients, light/dark theme
+│   ├── app_state.dart        # Global app state (ChangeNotifier)
+│   └── main.dart             # Entry point & route definitions
+├── docs/
+│   └── SRS_document.pdf      # Software Requirements Specification
+├── android/, ios/, etc.       # Platform-specific Flutter project files
+├── README.md
+└── pubspec.yaml
 ```
 
 ---
